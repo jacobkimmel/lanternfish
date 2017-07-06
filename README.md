@@ -4,6 +4,10 @@
 
 `Lanternfish` is a set of software tools to analyze motion data with convolutional neural networks (CNNs). `Lanternfish` converts recorded motion paths in 2-dimensions into 3-dimensional 'motion cube' images, representing motion in an entirely spatial manner. `Lanternfish` includes CNN architectures suitable for classification of these 3-dimensional 'motion cubes' or unsupervised learning of motion features by autoencoding.
 
+We've published a pre-print applying `Lanternfish` in the context of myogenic activation and neoplastic transformation. [Check it out on bioRxiv](http://www.biorxiv.org/content/early/2017/07/05/159202) for in depth explanations and a demonstration of applications.
+
+**Pre-print:** [Deep convolutional neural networks allow analysis of cell motility during stem cell differentiation and neoplastic transformation](http://www.biorxiv.org/content/early/2017/07/05/159202)
+
 ## Lanternfish Core Features
 
 ### Conversion of motion paths into 3-dimensional images
