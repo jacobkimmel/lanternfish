@@ -4,9 +4,9 @@
 
 `Lanternfish` is a set of software tools to analyze motion data with convolutional neural networks (CNNs). `Lanternfish` contains networks and tools to analyze motion using two approaches: (1) explicit 3D representations of motion analyzed with 3D CNNs, and (2) multi-channel time series representations of motion analyzed with 1D convolutional-recurrent neural networks (RNNs). `Lanternfish` includes CNN architectures suitable for classification and unsupervised learning of motion features by autoencoding with both of these approaches.
 
-We've published a pre-print applying `Lanternfish` in the context of myogenic activation and neoplastic transformation. [Check it out on bioRxiv](http://www.biorxiv.org/content/early/2017/07/05/159202) for in depth explanations and a demonstration of applications.
+We've published a pre-print applying `Lanternfish` in the context of myogenic activation and neoplastic transformation. [Check it out on bioRxiv](https://www.biorxiv.org/content/early/2018/02/09/159202) for in depth explanations and a demonstration of applications.
 
-**Pre-print:** [Deep convolutional neural networks allow analysis of cell motility during stem cell differentiation and neoplastic transformation](http://www.biorxiv.org/content/early/2017/07/05/159202)
+**Pre-print:** [Deep convolutional and recurrent neural networks for cell motility discrimination and prediction](https://www.biorxiv.org/content/early/2018/02/09/159202)
 
 ## Lanternfish Core Features
 
@@ -16,7 +16,7 @@ Lanternfish contains four core CNN architectures: (1) a 3D CNN classifier, (2) a
 
 Models are found in `bestiary.py`.
 
-![(A) 3D CNN classification and (B) autoencoder architecture. (C) RNN classification and (D) autoencoder architecture.](architectures.png)
+![(A) 3D CNN classification and (B) autoencoder architecture. (C) RNN classification and (D) autoencoder architecture.](imgs/architectures.png)
 
 ### Conversion of motion paths into 3-dimensional images
 
@@ -33,3 +33,11 @@ Motion cube generation tools are found in `motion_cube.py` and `motcube_preproce
 `Lanternfish` contains tools to simulate motion that mimics a sample of heterogeneous motion phenotypes, referred to as "cell mimesis". Sample motility behaviors are mimicked by decomposing the observed behavior into a set of *k* clusters based on displacement and directionality features, then simulating each of these clusters by fitting a Johnson distribution to displacement and turn angle observations within the cluster. Simulations are generated from each cluster proportional to their representation in the original sample.
 
 Cell mimesis tools are found in `cell_mimesis.py`
+
+### Cell Motility Prediction
+
+`Lanternfish` includes RNN sequence-to-sequence architectures for prediction of future cell motility behaviors based on past behaviors. These models learn to predict the subsequent steps in a cell's motility path from past steps, and demonstrate performance superior to linear models in muscle stem cells.
+
+These models can be found in `bestiary.py`, and the linear baseline in `linear_pred.py`.
+
+![Cell motility prediction RNNs.](imgs/prediction.png)
