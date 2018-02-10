@@ -1,6 +1,6 @@
 # Lanternfish
 
-![Lanternfish logo](lanternfish_logo.png)
+![Lanternfish logo](imgs/lanternfish_logo.png)
 
 `Lanternfish` is a set of software tools to analyze motion data with convolutional neural networks (CNNs). `Lanternfish` contains networks and tools to analyze motion using two approaches: (1) explicit 3D representations of motion analyzed with 3D CNNs, and (2) multi-channel time series representations of motion analyzed with 1D convolutional-recurrent neural networks (RNNs). `Lanternfish` includes CNN architectures suitable for classification and unsupervised learning of motion features by autoencoding with both of these approaches.
 
