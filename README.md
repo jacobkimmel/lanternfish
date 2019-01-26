@@ -35,7 +35,7 @@ Motility classification models can be trained the CLI accessible via `lanternfis
 
 A latent space embedding of cell motility samples can be learned in an unsupervised fashion using a `Lanternfish` autoencoder. These latent space embeddings may reveal interesting heterogeneity within cell populations. In an example experiment, we identified multiple distinct subpopulations of myogenic cells using this purely unsupervised latent space learning method.
 
-[Myogenic Latent Space](imgs/myo_latent.png)
+![Myogenic Latent Space](imgs/myo_latent.png)
 
 Autoencoders can be trained and relevant latent spaces extracted using the CLI accessible at `lanternfish/main.py`.
 
