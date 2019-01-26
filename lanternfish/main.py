@@ -249,3 +249,6 @@ def main():
         np.savetxt(osp.join(args.out_path, 'latent.csv'), delimiter=',')
     else:
         raise ValueError()
+
+if __name__ == '__main__':
+    main()
