@@ -25,7 +25,7 @@ of nodes in a fully-connected layer or LSTM unit in a series.
 Convolutional layers and paired with a rectified linear unit
 activation. Pooling and upsampling layers operate with isotropic kernels of size
 2 and stride of 2. Zero padding is performed as needed in autoencoder models to
-match input size.](imgs/architectures.png)
+match input size.](imgs/rnn_architectures.png)
 
 ### Cell Motility Classification
 
