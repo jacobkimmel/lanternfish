@@ -43,12 +43,12 @@ Autoencoders can be trained and relevant latent spaces extracted using the CLI a
 
 `Lanternfish` contains tools to simulate motion that mimics a sample of heterogeneous motility behaviors, referred to as "cell mimesis". Sample motility behaviors are mimicked by decomposing the observed behavior into a set of *k* clusters based on displacement and directionality features, then simulating each of these clusters by fitting a Johnson distribution to displacement and turn angle observations within the cluster. Simulations are generated from each cluster proportional to their representation in the original sample.
 
-Cell mimesis tools are found in `cell_mimesis.py`
+Cell mimesis tools are found in `lanternfish/cell_mimesis.py`
 
 ### Cell Motility Prediction
 
 `Lanternfish` includes RNN architectures for prediction of future cell motility behaviors based on past behaviors. These models learn to predict the subsequent steps in a cell's motility path from past steps, and demonstrate performance superior to linear models in muscle stem cells.
 
-These models can be found in `bestiary.py`, and the linear baseline in `linear_pred.py`.
+These models can be found in `lanternfish/bestiary.py`, and the linear baseline in `linear_pred.py`.
 
 ![Cell motility prediction RNNs.](imgs/prediction.png)
